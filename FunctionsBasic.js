@@ -11,7 +11,7 @@ function add(a, b) //method implementation - Traditional
 let sum = add(3, 5) // Method calling and storing the result into a variable
 console.log(sum)
 
-//Alternate way  Do not have name => anonymous function 
+//Alternate way  Do not have name '=>' anonymous function 
 
 let sumOfInteger = function (c, d) {
     return c + d
