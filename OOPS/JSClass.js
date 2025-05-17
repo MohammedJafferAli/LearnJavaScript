@@ -1,5 +1,5 @@
 //To import any class into another class to file, first it should export
-module.export = class Person {
+class Person {
     age = 24 //class variables 
 
     get location() {
@@ -19,11 +19,13 @@ module.export = class Person {
     }
 
     Fullname() {
-        return this.firstName +" "+ this.lastName
+        return this.firstName + " " + this.lastName;
     }
 }
 let person = new Person('Tim', 'Cook')//obj to get the properties from class
 let person1 = new Person('John', 'Mark')
-    console.log(person.age)
-    console.log(person.location) //Calling method doesn't requires braces
-    console.log(person.Fullname())
+console.log(person.age)
+console.log(person.location) //Calling method doesn't requires braces
+console.log(person.Fullname())
+
+module.exports = Person;

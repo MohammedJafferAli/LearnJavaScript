@@ -1,4 +1,4 @@
-const Person = require("./JSClass"); //Import the exported the class
+const Person = require('/Users/mohammedjafferali.abubakkarsiddiq/Documents/LearnJavaScript/OOPS/JSClass'); //importing the whole class here so give it to a constant
 
 
 class Pet extends Person //extend keyword to inherit the parent class
