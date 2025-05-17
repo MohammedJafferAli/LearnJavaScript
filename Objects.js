@@ -3,7 +3,9 @@
 let person = {
 
     firstname: 'Tim',
-    lastname : 'cook'
+    lastname : 'cook',
+    Age : 28,
+    isEligible : true
 
 }
 
@@ -25,5 +27,11 @@ console.log(person)
 delete person.gender 
 console.log(person)
 
-//property exist in the object
+//property exist in the object syntax 'Key' in 'Object'
 console.log('gender' in person)
+
+//Iterate through the person object
+for(let Key in person)
+{
+    person[Key]
+}

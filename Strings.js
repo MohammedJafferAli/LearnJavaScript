@@ -29,4 +29,24 @@ console.log(diff.toString())
 let quote = day + " is Funday"
 console.log(quote)
 
-//Find the number of occurance of any string like 'day'
+//Find "day" word in the string
+let boolValue = quote.includes(day)
+console.log(boolValue)
+
+//Find the 1st occurance of any string like 'day'
+let indexValue = quote.indexOf('day')
+console.log(indexValue)
+
+//Find the 2ndst occurance of any string like 'day'
+console.log(quote.indexOf('day',5))
+
+//Find the number of occurance in the string
+var count = 0;
+var searchResult = quote.indexOf('day');
+
+while (searchResult !== -1) {
+    count++;
+    searchResult = quote.indexOf('day', searchResult + 1);
+}
+
+console.log(count);
